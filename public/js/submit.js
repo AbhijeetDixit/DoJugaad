@@ -128,7 +128,6 @@ app.controller('sController',function($scope,$http,$window){
         else{
             alert("You are not logged in\n");
             alert("Try logging in\n");
-            $window.location.href = '/login_popup';
         }
     };
 
