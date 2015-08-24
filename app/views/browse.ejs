@@ -18,7 +18,6 @@
 <div id="SomeId">
 
     <div layout="row">
-<!--        <div hide-sm flex-md="20" flex-gt-md="20" flex-lg="20" flex-gt-lg="20"></div>-->
         <md-card flex>
             <md-card-content>
                 <md-content>
@@ -34,19 +33,21 @@
         </md-card>
     </div>
     <div layout="row">
+        <md-sidenav md-sidenav-id="left" class="md-sidenav-left">
+            Browse by category
+        </md-sidenav>
+        <md-content>
+            Category1
+            Category2
+            Category3
+        </md-content>
+    </div>
+    <div layout="row">
         <md-card flex>
             <md-card-content>
                 <md-content>
                     <md-list>
-<!--                        <md-list-item class="md-3-line" ng-repeat="item in posts">
-
-                            <div flex class="md-whiteframe-z2" style="margin-bottom: 10px;">
-                                <md-content class="md-padding" ng-cloak>
-                                    And something here.
-                                </md-content>
-                            </div>
-                        </md-list-item>-->
-                        <md-list-item class="md-3-line" ng-repeat="5">
+                        <md-list-item class="md-3-line">
                             <div flex class="md-whiteframe-z2" style="margin-bottom: 10px;">
                                 This is something awesome.
                             </div>
