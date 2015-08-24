@@ -160,6 +160,15 @@ module.exports = function(app, passport,db) {
 
         res.send(false);
     });
+    
+    
+    //=======================================
+    //BROWSE=================================
+    //=======================================
+    app.get('/browse',function(req, res) {
+       console.log("User tried browsing your products"); 
+        res.render('browse.ejs', { message: req.flash('Happy Browsing') });
+    });
 
 
 };/* End of module */
