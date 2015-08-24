@@ -40,7 +40,10 @@
         <md-card flex>
             <md-card-content>
                 <md-content>
-                    Here you can place something.
+
+                    <md-button class="md-raised md-primary" ng-href="/jugaad">Ask Jugaad</md-button>
+                    <md-button class="md-raised md-primary" ng-href="/idea">Submit Idea</md-button>
+                    <md-button class="md-raised md-primary" ng-href="/product">Submit Product</md-button>
 
                 </md-content>
 
@@ -50,7 +53,9 @@
 
                             <div flex class="md-whiteframe-z2" style="margin-bottom: 10px;">
                                 <md-content class="md-padding" ng-cloak>
-                                    Well here something can be placed.
+                                    <h3>{{item.title}}</h3>
+                                    <p>{{item.description}}</p>
+                                    <p>{{item.category}}</p>
                                 </md-content>
                             </div>
                         </md-list-item>
