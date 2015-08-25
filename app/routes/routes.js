@@ -167,7 +167,7 @@ module.exports = function(app, passport,db) {
     //=======================================
     app.get('/browse',function(req, res) {
        console.log("User tried browsing your products"); 
-        res.render('browse.ejs', { message: req.flash('Happy Browsing') });
+        res.render('browse.ejs', { });
     });
 
 
