@@ -168,9 +168,6 @@ module.exports = function(app, passport,db) {
     app.get('/browse',function(req, res) {
        console.log("User tried browsing your products"); 
         res.render('browse.ejs', {
-            user : 'Abhijeet', // get the user out of session and pass to template
-            title : 'Submit Idea',
-            id: 'i' 
         });
     });
 
