@@ -15,18 +15,9 @@
         <md-button  ng-href="/browse"  aria-label="Browse" class="md-raised md-cornered">
             Browse
         </md-button>
-        <% if ( data ) { %>
-        <% if (data.name == 'aashish' || data.name == 'Ashish') {%>
-        <md-button  ng-href="/admin"  aria-label="Admin Panel" class="md-raised ">Panel</md-button>
-        <%}%>
-        <img ng-src="{{ avatar }}" alt="" class="md-avatar avatar">
-        <span class="md-flex" ><%=data.name%></span>
-        <md-button  ng-href="/logout"  aria-label="Logout" class="md-raised md-accent">Logout</md-button>
-        <% }else { %>
         <md-button  ng-href="/login"  aria-label="Login" class="md-raised md-warn">
         <md-icon md-svg-src="images/icons/account-circle.svg"></md-icon>
             Login
         </md-button>
-        <% } %>
     </div>
 </md-toolbar>

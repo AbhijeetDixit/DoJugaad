@@ -5,7 +5,6 @@ var app = angular.module('myApp',['ngMaterial']);
 
 
 app.controller('browsectrl',function($scope,$location,$http){
-    $scope.imagePath = 'images/vb.png';
 
 
 });

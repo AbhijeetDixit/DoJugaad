@@ -120,6 +120,7 @@ module.exports = function(app, passport,db) {
             title : 'Submit Idea',
             id: 'i'
         });
+        console.log(req.user);
     });
 
     app.get('/product', function(req, res) {
@@ -167,8 +168,7 @@ module.exports = function(app, passport,db) {
     //=======================================
     app.get('/browse',function(req, res) {
        console.log("User tried browsing your products"); 
-        res.render('browse.ejs', {
-        });
+        res.render('browse.ejs', {});
     });
 
 
