@@ -6,7 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css"/>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=RobotoDraft:400,500,700"/>
-    <link rel="stylesheet" href="css/preloader.css"/>
+   <link rel="stylesheet" href="css/preloader.css"/>
+    <link rel="stylesheet" type="text/css" href="css/browse.css">
 
     <title>DoJugaad Products</title>
 
@@ -15,27 +16,35 @@
 
 </head>
 <body ng-app="myApp" ng-controller="browsectrl" ng-cloak>
-<div id="SomeId">
+<div id="someID">
 <% include header %>
-    <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
-        <md-toolbar md-theme="deep-orange">
-            <h2 class="md-toolbar-tools"> This is the sidenav</h2>
-        </md-toolbar>
-        <md-content md-theme="deep-orange">
-            <p> This is just some random stuff</p>
-        </md-content>
-    </md-sidenav>
-    <div layout="row">
-        <div hide-sm flex-md="20" flex-gt-md="20" flex-lg="20" flex-gt-lg="20"></div>
-            <md-card flex>
-                <md-card-content>
-                    <md-content>
-                        This is some other content.
-                    </md-content>
-                </md-card-content>
-            </md-card>
-        </div>
-    </div>
+	<div flex class="md-toolbar-tools">
+		Home > {{path}}
+	</div>
+	<div layout="row">
+	    <div hide-sm flex-md="10" flex-gt-md="10" flex-lg="10" flex-gt-lg="10">
+	    	<md-button class="md-button-toggle" ng-repeat="cats in catags" layout="row" ng-click="expand()">
+	    		{{cats}}
+	    	</md-button>
+    	</div>
+    	<div hide-sm flex-md="80" flex-gt-md="80" flex-lg="80" flex-gt-lg="80">
+    		<md-card flex>
+    			<md-card-content>
+    				<md-list>
+                        <md-list-item class="md-3-line">
+                            <div flex class="md-whiteframe-z2" style="margin-bottom: 10px; width:30px;">
+                            	<md-content class="md-padding" ng-cloak>
+                            		<img src="images/NoImageAvailable.jpg">
+                            		<h3>Some title</h3>
+                            		<p>Some description</p>
+                            	</md-content>
+                            </div>
+                        </md-list-item>
+    				</md-list>
+    			</md-card-content>
+    		</md-card>
+    	</div>
+	</div>
 </div> 
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/angular-aria/angular-aria.min.js"></script>
