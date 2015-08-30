@@ -1,7 +1,7 @@
 /**
  * Created by aashish on 11/8/15.
  */
-var app = angular.module('myApp',['ngMaterial']);
+var app = angular.module('myApp',['ngMaterial','ngRoute']);
 
 app.config(['$routeProvider',
   function ($routeProvider) {
