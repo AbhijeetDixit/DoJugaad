@@ -9,9 +9,8 @@ app.controller('browsectrl',function($scope,$location,$http){
     $scope.catags = ["Technology","Science","Daily Life","General","Other"];
     $scope.path = "All Categories";
 
-    $scope.expand = function () {
-        alert('Expand');
-        console.log($scope.buttons);
+    $scope.expand = function ($args) {
+      $scope.path = $scope.catags[$args];
     }
 
     $scope.myvar = false;

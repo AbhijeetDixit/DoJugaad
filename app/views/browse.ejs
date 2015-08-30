@@ -23,7 +23,7 @@
 	</div>
 	<div layout="row">
 	    <div hide-sm flex-md="15" flex-gt-md="15" flex-lg="15" flex-gt-lg="15"  ng-cloak>
-	    	<md-button class="md-button-toggle" ng-repeat="cats in catags" layout="row" ng-click="expand()">
+	    	<md-button class="md-button-toggle" ng-repeat="cats in catags" layout="row" ng-click="expand($index)">
 	    		{{cats}}
 	    	</md-button>
     	</div>
