@@ -23,26 +23,13 @@
 	</div>
 	<div layout="row">
 	    <div hide-sm flex-md="15" flex-gt-md="15" flex-lg="15" flex-gt-lg="15"  ng-cloak>
-	    	<md-button class="md-button-toggle" ng-repeat="cats in catags" layout="row" ng-click="expand($index)">
+	    	<md-button class="md-button-toggle" ng-repeat="cats in catags" layout="row" a href="#Technology">
 	    		{{cats}}
 	    	</md-button>
     	</div>
     	<div flex-sm="100" flex-md="1000" flex-gt-md="100" flex-lg="80" flex-gt-lg="80">
-    		<md-card flex>
-    			<md-card-content>
-    				<md-list>
-                        <md-list-item class="md-3-line">
-                            <div flex class="md-whiteframe-z2" style="margin-bottom: 10px; width:30px;">
-                            	<md-content class="md-padding" ng-cloak>
-                            		<img src="images/NoImageAvailable.jpg">
-                            		<h3>Some title</h3>
-                            		<p>Some description</p>
-                            	</md-content>
-                            </div>
-                        </md-list-item>
-    				</md-list>
-    			</md-card-content>
-    		</md-card>
+        <ng-view>
+        </ng-view>
     	</div>
 	</div>
 </div> 

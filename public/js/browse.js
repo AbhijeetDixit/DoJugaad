@@ -3,6 +3,15 @@
  */
 var app = angular.module('myApp',['ngMaterial']);
 
+app.config(['$routeProvider',
+  function ($routeProvider) {
+    $routeProvider.when('/Technology',
+    {
+      templateUrl:'template/Technology.html',
+      controller:'techCtrl'
+    })
+  }
+  ]);
 
 app.controller('browsectrl',function($scope,$location,$http){
     console.log('In browse controller');
@@ -63,11 +72,8 @@ app.controller('browsectrl',function($scope,$location,$http){
 
     });
 
-
-
-
-
 });
 
-
-
+app.controller('techCtrl',function ($scope) {
+  alert("Technology controller");
+});
