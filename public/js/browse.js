@@ -11,6 +11,7 @@ app.controller('browsectrl',function($scope,$location,$http){
 
     $scope.expand = function () {
         alert('Expand');
+        console.log($scope.buttons);
     }
 
     $scope.myvar = false;

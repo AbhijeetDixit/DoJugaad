@@ -1,5 +1,8 @@
-
 .md-button-toggle{
 	width:100%;
 	text-align: left;
+}
+
+.clickableMenuItem:hover{
+	background: #9f9 !important;
 }
