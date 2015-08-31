@@ -7,7 +7,7 @@ app.config(['$routeProvider',
   function ($routeProvider) {
     $routeProvider.when('/Technology',
     {
-      templateUrl:'template/Technology.html',
+      templateUrl:'template/Technology.ejs',
       controller:'techCtrl'
     })
   }
@@ -75,5 +75,5 @@ app.controller('browsectrl',function($scope,$location,$http){
 });
 
 app.controller('techCtrl',function ($scope) {
-  alert("Technology controller");
+//  alert("Technology controller");
 });
